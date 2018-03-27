@@ -14,6 +14,7 @@ public class App
     }
 
     private static void foo() {
+        // code change
         Bugsnag bugsnag = new Bugsnag(System.getenv("KEY"));
         bugsnag.setAppVersion("1.0.0");
         bugsnag.addCallback((report)-> {
